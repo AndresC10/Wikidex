@@ -1,0 +1,332 @@
+.poke-card {
+    width: 100%;
+    max-width: 330px;
+    border-radius: 0.7em;
+    border: 0.4em solid #87aa3b;
+    cursor: pointer;
+}
+
+.poke-card__header {
+    width: 100.13%;
+    background-color: #aaa;
+    height: 120px;
+    position: relative;
+}
+
+.poke-card__sprite {
+    width: 50%;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.poke-card__body {
+    padding-top: 2.6em;
+    background-color: #ffffff;
+}
+
+.poke-card__name {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.7em;
+    font-weight: 500;
+}
+
+.poke-card__types-container {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+.poke-card__type {
+    position: relative;
+    font-weight: 300;
+    text-transform: capitalize;
+    font-size: 0.9em;
+}
+
+.poke-card__type:nth-child(2)::before {
+    content: '/';
+    position: absolute;
+    left: -11px;
+}
+
+.poke-card__footer {
+    padding: 1em 0.8em 2em;
+    background-color: #ffffff;
+}
+
+.poke-card__stats-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 25px 5px;
+}
+
+.poke-card__stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4em;
+}
+
+.poke-card__label {
+    text-transform: uppercase;
+    color: #9F9F9F;
+    font-weight: 300;
+    font-size: 0.7em;
+    text-align: center;
+}
+
+.bg-grass {
+    background-image: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
+}
+
+.border-grass {
+    border: 0.4em solid #b8dcb1;
+    border-top-width: 0.5em;
+}
+
+.name-grass,
+.number-grass {
+    color: #b8dcb1;
+}
+
+.bg-fire {
+    background: linear-gradient(176.37deg, #F96D6F -32.26%, #E35825 22.55%, #E8AE1B 125.72%);
+}
+
+.border-fire {
+    border: 0.4em solid #e67d26;
+    border-top-width: 0.5em;
+}
+
+.name-fire,
+.number-fire {
+    color: #e67d26;
+}
+
+.bg-water {
+    background: linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82B2F1 214.85%);
+}
+
+.border-water {
+    border: 0.4em solid #4f9bfd;
+    border-top-width: 0.5em;
+}
+
+.name-water,
+.number-water {
+    color: #4f9bfd;
+}
+
+.bg-bug {
+    background: linear-gradient(177.56deg, #62DB60 -58.92%, #3BB039 16.57%, #AAFFA8 209.53%);
+}
+
+.border-bug {
+    border: 0.4em solid #89cb77;
+    border-top-width: 0.5em;
+}
+
+.name-bug,
+.number-bug {
+    color: #89cb77;
+}
+
+.bg-normal {
+    background: linear-gradient(181.51deg, #735259 -6.44%, #BC6B7C 121.95%, #7C3F4C 186.11%);
+}
+
+.border-normal {
+    border: 0.4em solid #95606b;
+    border-top-width: 0.5em;
+}
+
+.name-normal,
+.number-normal {
+    color: #95606b;
+}
+
+.bg-poison {
+    background: linear-gradient(177.03deg, #5B3184 -11.97%, #A564E3 71.28%, #CE9BFF 135.64%);
+}
+
+.border-poison {
+    border: 0.4em solid #8758b5;
+    border-top-width: 0.5em;
+}
+
+.name-poison,
+.number-poison {
+    color: #8758b5;
+}
+
+.bg-ground {
+    background: linear-gradient(179.75deg, #654008 -19.96%, #895C1A 43.67%, #D69638 138.4%);
+}
+
+.border-ground {
+    border: 0.4em solid #784d0c;
+    border-top-width: 0.5em;
+}
+
+.name-ground,
+.number-ground {
+    color: #784d0c;
+}
+
+.bg-fighting {
+    background: linear-gradient(176.83deg, #96402A -8.78%, #F1613C 169.09%, #CB735D 242.33%);
+}
+
+.border-fighting {
+    border: 0.4em solid #c64f31;
+    border-top-width: 0.5em;
+}
+
+.name-fighting,
+.number-fighting {
+    color: #c64f31;
+}
+
+.bg-ghost {
+    background: linear-gradient(177.03deg, #323569 -11.97%, #454AA8 57.49%, #787DDA 135.64%);
+}
+
+.border-ghost {
+    border: 0.4em solid #4d53b8;
+    border-top-width: 0.5em;
+}
+
+.name-ghost,
+.number-ghost {
+    color: #4d53b8;
+}
+
+.bg-rock {
+    background: linear-gradient(177.03deg, #7E7E7E -11.97%, #8D8D94 57.49%, #D3D3D3 135.64%);
+}
+
+.border-rock {
+    border: 0.4em solid #999999;
+    border-top-width: 0.5em;
+}
+
+.name-rock,
+.number-rock {
+    color: #999999;
+}
+
+.bg-dark {
+    background: linear-gradient(177.03deg, #030706 -11.97%, #0D1211 57.49%, #5A5E5D 135.64%);
+}
+
+.border-dark {
+    border: 0.4em solid #2b2c2c;
+    border-top-width: 0.5em;
+}
+
+.name-dark,
+.number-dark {
+    color: #2b2c2c;
+}
+
+.bg-ice {
+    background: linear-gradient(177.03deg, #6FBEDF -11.97%, #64CBF5 47.77%, #BDEBFE 136.72%);
+}
+
+.border-ice {
+    border: 0.4em solid #a2d9ef;
+    border-top-width: 0.5em;
+}
+
+.name-ice,
+.number-ice {
+    color: #a2d9ef;
+}
+
+.bg-steel {
+    background: linear-gradient(179.75deg, #5E736C -19.96%, #728881 43.67%, #A8A8A8 138.4%);
+}
+
+.border-steel {
+    border: 0.4em solid #7d968e;
+    border-top-width: 0.5em;
+}
+
+.name-steel,
+.number-steel {
+    color: #7d968e;
+}
+
+.bg-dragon {
+    background: linear-gradient(179.75deg, #478A93 -19.96%, #56A4AE 43.67%, #A2BEC1 138.4%);
+}
+
+.border-dragon {
+    border: 0.4em solid #67adb6;
+    border-top-width: 0.5em;
+}
+
+.name-dragon,
+.number-dragon {
+    color: #67adb6;
+}
+
+.bg-electric {
+    background: linear-gradient(152deg, rgb(245 228 0) 12%, rgba(254, 160, 75, 1) 61%, rgba(254, 159, 38, 1) 90%);
+}
+
+.border-electric {
+    border: 0.4em solid #d1793b;
+    border-top-width: 0.5em;
+}
+
+.name-electric,
+.number-electric {
+    color: #d1793b;
+}
+
+.bg-fairy {
+    background: linear-gradient(152deg, rgba(246, 101, 208, 1) 29%, rgba(236, 99, 246, 1) 49%, rgba(217, 38, 254, 1) 90%);
+}
+
+.border-fairy {
+    border: 0.4em solid #dd38c9;
+    border-top-width: 0.5em;
+}
+
+.name-fairy,
+.number-fairy {
+    color: #dd38c9;
+}
+
+.bg-psychic {
+    background: linear-gradient(179.75deg, #971B45 -19.96%, #C23867 43.67%, #CD7D98 138.4%);
+}
+
+.border-psychic {
+    border: 0.4em solid #af3c63;
+    border-top-width: 0.5em;
+}
+
+.name-psychic,
+.number-psychic {
+    color: #af3c63;
+}
+
+.bg-flying {
+    background: linear-gradient(152deg, rgba(221, 255, 250, 1) 32%, rgba(165, 250, 251, 1) 66%, rgba(149, 255, 251, 1) 90%);
+}
+
+.border-flying {
+    border: 0.4em solid #6ec0e7;
+    border-top-width: 0.5em;
+}
+
+.name-flying,
+.number-flying {
+    color: #6ec0e7;
+}

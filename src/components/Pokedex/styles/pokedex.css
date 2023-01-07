@@ -1,0 +1,116 @@
+.header__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.trainer__name {
+    margin-top: 1.5rem;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.trainer__name__span {
+    color: red;
+}
+
+.search-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+
+.form-container {
+    width: 55%;
+    max-width: 1440px;
+}
+
+.form__input {
+    width: 65%;
+    height: 40px;
+    border-width: 0;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+    padding-left: 12px;
+}
+
+.form__input::placeholder {
+    color: #bdbcbc9c;
+}
+
+.form__button {
+    width: 25%;
+    height: 40px;
+    background-color: #D93F3F;
+    color: white;
+}
+
+
+.type__select {
+    width: 25%;
+    font-size: 12px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+    padding-left: 4px;
+    height: 40px;
+    border: 4px solid white;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.type__option {
+    text-transform: capitalize;
+}
+
+.poke-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    max-width: 1480px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.pagination-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5rem;
+}
+
+@media (min-width: 472px) {
+
+    .trainer__name {
+        font-size: 1.3em;
+    }
+
+    .type__select {
+        font-size: 14px;
+        padding-left: 12px;
+        background-image: url('/arrow-down-solid.svg');
+        background-repeat: no-repeat;
+        background-position: 95%;
+        background-size: 8px;
+    }
+}
+
+@media (min-width: 722px) {
+
+    .trainer__name {
+        font-size: 1.5em;
+    }
+}

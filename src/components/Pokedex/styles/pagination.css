@@ -1,0 +1,33 @@
+.list-container {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.list__item {
+    width: clamp(20px, 5vw, 60px);
+    font-size: 28px;
+    aspect-ratio: 1;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.active-page {
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+
+.arrows {
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+
+.none {
+    display: none;
+}
